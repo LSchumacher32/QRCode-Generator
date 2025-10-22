@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>QR Code Generator</title>
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<body>
+  <h2>QR Code Generator</h2>
+
+  <input type="text" id="textInput" placeholder="Text oder URL eingeben" />
+  <button id="generateBtn">QR Code generieren</button>
+
+  <div id="qrResult"></div>
+
+  <script src="script.js"></script>
+</body>
+
+<style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+  
+    h2 {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+  
+    input[type="text"] {
+      width: 300px;
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border: 2px solid #007bff;
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+  
+    input[type="text"]:focus {
+      border-color: #0056b3;
+    }
+  
+    button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #0056b3;
+    }
+  
+    #qrResult {
+    display: none; /* Anfangs versteckt */
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+  </style>
+  
+
+</html>
